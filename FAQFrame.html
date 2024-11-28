@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>FAQs - Landslide Detection System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold text-center mb-8 text-white"> <br><br>Frequently Asked Questions</h1>
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="mb-4">
+                <button class="w-full text-left text-xl font-medium text-gray-700 focus:outline-none flex items-center justify-between" onclick="toggleFAQ('faq1')">
+                    <span>What is a Landslide Detection System?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq1" class="hidden mt-2 text-gray-600">
+                    A Landslide Detection System is a technology-based solution designed to monitor and detect potential landslides in real-time, providing early warnings to prevent disasters and save lives.
+                </div>
+            </div>
+            <div class="mb-4">
+                <button class="w-full text-left text-xl font-medium text-gray-700 focus:outline-none flex items-center justify-between" onclick="toggleFAQ('faq2')">
+                    <span>How does the Landslide Detection System work?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq2" class="hidden mt-2 text-gray-600">
+                    The system uses a combination of sensors, satellite data, and machine learning algorithms to monitor soil movement, rainfall, and other environmental factors. It analyzes this data to predict potential landslides and sends alerts to relevant authorities.
+                </div>
+            </div>
+            <div class="mb-4">
+                <button class="w-full text-left text-xl font-medium text-gray-700 focus:outline-none flex items-center justify-between" onclick="toggleFAQ('faq3')">
+                    <span>What types of sensors are used in the system?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq3" class="hidden mt-2 text-gray-600">
+                    The system typically uses a variety of sensors including ground motion sensors, inclinometers, rain gauges, and GPS sensors to collect data on soil movement, moisture levels, and other critical parameters.
+                </div>
+            </div>
+            <div class="mb-4">
+                <button class="w-full text-left text-xl font-medium text-gray-700 focus:outline-none flex items-center justify-between" onclick="toggleFAQ('faq4')">
+                    <span>Can the system be used in remote areas?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq4" class="hidden mt-2 text-gray-600">
+                    Yes, the Landslide Detection System is designed to be deployed in remote and inaccessible areas. It can use satellite communication and solar power to operate independently of local infrastructure.
+                </div>
+            </div>
+            <div class="mb-4">
+                <button class="w-full text-left text-xl font-medium text-gray-700 focus:outline-none flex items-center justify-between" onclick="toggleFAQ('faq5')">
+                    <span>How accurate is the Landslide Detection System?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq5" class="hidden mt-2 text-gray-600">
+                    The accuracy of the system depends on the quality and density of the sensor network, as well as the algorithms used for data analysis. Modern systems can provide highly accurate predictions with minimal false alarms.
+                </div>
+            </div>
+            <div class="mb-4">
+                <button class="w-full text-left text-xl font-medium text-gray-700 focus:outline-none flex items-center justify-between" onclick="toggleFAQ('faq6')">
+                    <span>What are the benefits of using a Landslide Detection System?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq6" class="hidden mt-2 text-gray-600">
+                    The primary benefits include early warning of potential landslides, reduced risk to human life, minimized property damage, and improved disaster preparedness and response.
+                </div>
+            </div>
+            <div class="mb-4">
+                <button class="w-full text-left text-xl font-medium text-gray-700 focus:outline-none flex items-center justify-between" onclick="toggleFAQ('faq7')">
+                    <span>How can I get more information or support?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="faq7" class="hidden mt-2 text-gray-600">
+                    For more information or support, you can contact our customer service team via email or phone. We also have a detailed user manual and online resources available on our website.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(faqId) {
+            const faq = document.getElementById(faqId);
+            faq.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
